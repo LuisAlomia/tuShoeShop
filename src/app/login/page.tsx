@@ -4,6 +4,7 @@ import Link from "next/link";
 import Form from "./components/Form";
 import Image from "next/image";
 import arrowSvg from "../../../public/svg/arrow.svg";
+import "../globals.css";
 
 const Login = () => {
   return (
@@ -14,7 +15,7 @@ const Login = () => {
       >
         <h4 className="text-4xl px-[2rem] cursor-default font-bold text-slate-500 relative">
           <button className="flex justify-center items-center rounded-full bg-white hover:bg-[#dddddd] w-12 h-12 p-1 ml-[-2.5rem] cursor-pointer absolute left-[2rem] top-[-2rem] shadow-md">
-            <Link href={"/"} className="">
+            <Link href={"/"}>
               <Image src={arrowSvg} alt="arrow" className="w-8" />
             </Link>
           </button>
