@@ -19,4 +19,12 @@ export const productMock: Product = {
   available: true,
   description:
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima enim distinctio ex illo porro qui odit animi sint! Suscipit aliquid sunt a eaque repellendus ipsam possimus! Quaerat et cumque nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quia. Dolores natus voluptas ut reiciendis distinctio reprehenderit ducimus fugit laborum, nobis veritatis fuga provident unde. Natus id eius harum consectetur.",
+  review: [
+    {
+      id: "1",
+      message:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima enim distinctio ex illo porro qui",
+      name: "andres",
+    },
+  ],
 };
