@@ -2,26 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Styles of login and register */
+
+.image-login {
+  background-image: url("../../public/images/login.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@media (max-width: 1024px) {
+  .hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  .hero::before {
+    content: "";
+    background-image: url("../../public/images/login.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
+  }
+
+  .form {
+    position: relative;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.input {
+  background: #a7a6a648;
+  color: black;
+  margin: 0.7rem 0;
+  border: 1px;
+  border-radius: 0.5rem;
+  padding: 0.7rem;
+  width: 100%;
+  outline: none;
+}
+
+.input:hover {
+  background: #a7a6a677;
+}
+
+/* Styles of CardProduct dot */
+
+.dot {
+  margin: 1rem;
+  cursor: pointer;
+  height: 0.6rem;
+  width: 0.6rem;
+  margin: 0px 0.2rem;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+}
+
+.dot-activedot {
+  background-color: #3d3b3b;
 }
