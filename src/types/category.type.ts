@@ -1,6 +1,6 @@
 export enum Genre {
-  hombre,
-  mujer,
+  hombre = "hombre",
+  mujer = "mujer",
 }
 
 export type Category = {
